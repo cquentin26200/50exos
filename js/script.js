@@ -50,3 +50,9 @@ function CalculateTheSumEvenNumbersGreaterThanTenAndLessThanThirty () {
 }
 
 CalculateTheSumEvenNumbersGreaterThanTenAndLessThanThirty();
+
+function convertCelsiusToFahrenheit (number) {
+  console.log(Math.floor(number * (9 / 5) + 32));
+}
+
+convertCelsiusToFahrenheit(34);
