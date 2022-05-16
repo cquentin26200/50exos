@@ -13,3 +13,13 @@ function printOddNumberLessThanOneHundred() {
 }
 
 printOddNumberLessThanOneHundred();
+
+function printTheMultiplicationTableWithNumberFormOneToTen () {
+    for (let i = 1; i < 11; i++) {
+        for (let o = 1; o < 11; o++) {
+            console.log(`${i} * ${o}`);
+        }
+    }
+}
+
+printTheMultiplicationTableWithNumberFormOneToTen();
