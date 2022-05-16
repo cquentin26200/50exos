@@ -40,3 +40,13 @@ function calculateTen () {
 }
 
 calculateTen();
+
+function CalculateTheSumEvenNumbersGreaterThanTenAndLessThanThirty () {
+    for (let i = 30; i > 9; i--) {
+        if (i % 2 === 0) {
+            console.log(i)
+        }
+    }
+}
+
+CalculateTheSumEvenNumbersGreaterThanTenAndLessThanThirty();
