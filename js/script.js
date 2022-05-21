@@ -92,8 +92,8 @@ convertFahrenheitToCelsius(34);
 
 //10. Calculate the sum of numbers in an array of numbers
 
-let tmp = 0;
 function calculateSumNumberInArray (array) {
+  let tmp = 0;
   for (let i = 0; i < array.length; i++) {
     tmp += array[i]
   }
@@ -101,4 +101,14 @@ function calculateSumNumberInArray (array) {
 
 calculateSumNumberInArray([1, 7, 3, 8, 2, 5]);
 
-console.log(tmp)
+//11. Calculate the average of the numbers in an array of numbers
+
+function calcuateAverageOfNumber (array) {
+  let tmp = 0;
+  for (let arrays of array) {
+    tmp += arrays / array.length;
+  }
+}
+
+calcuateAverageOfNumber([1, 7, 3, 8, 4]);
+
