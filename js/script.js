@@ -104,11 +104,15 @@ calculateSumNumberInArray([1, 7, 3, 8, 2, 5]);
 //11. Calculate the average of the numbers in an array of numbers
 
 function calcuateAverageOfNumber (array) {
-  let tmp = 0;
-  for (let arrays of array) {
-    tmp += arrays / array.length;
-  }
+  return array.reduce((e, a) => e + a) / array.length;
 }
 
 calcuateAverageOfNumber([1, 7, 3, 8, 4]);
 
+//.12 Create a function that receives an array of numbers as argument and returns an array containing only the positive numbers
+
+function returnPositiveNumber (array) {
+    return array.filter(e => e > 0)
+  }
+
+returnPositiveNumber([2, -4, 8, 3, -6])
