@@ -84,3 +84,21 @@ convertCelsiusToFahrenheit(34);
 
 //9. Create a function that will convert from Fahrenheit to Celsius
 
+function convertFahrenheitToCelsius (number) {
+  return Math.floor((number - 32) * 5/9);
+}
+
+convertFahrenheitToCelsius(34);
+
+//10. Calculate the sum of numbers in an array of numbers
+
+let tmp = 0;
+function calculateSumNumberInArray (array) {
+  for (let i = 0; i < array.length; i++) {
+    tmp += array[i]
+  }
+}
+
+calculateSumNumberInArray([1, 7, 3, 8, 2, 5]);
+
+console.log(tmp)
