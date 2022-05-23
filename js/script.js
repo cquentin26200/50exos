@@ -92,7 +92,6 @@ convertFahrenheitToCelsius(34);
 //10. Calculate the sum of numbers in an array of numbers
 
 function calculateSumNumberInArray(array) {
-  let tmp = 0;
   for (let i = 0; i < array.length; i++) {
     tmp += array[i];
   }
@@ -124,10 +123,30 @@ function findTheMaxNumber(array) {
 
 findTheMaxNumber([4, 2, 9, 6, 1]);
 
-//14. Print the first 10 Fibonacci numbers without recursion
+//16. Create a function that will return a Boolean specifying if a number is prime
 
-function fibonacci (array) {
-  return array.reduce((e, a) => e + a);
+function returnThePrimeNumber (array) {
+  return array.filter(e => Number.isInteger(e));
 }
 
-fibonacci([1, 2, 3, 5, 8])
+returnThePrimeNumber([3, 8, 4.7, 1, 3.9]);
+
+//18. Print the first 100 prime numbers
+
+function printFirst100Number () {
+  for (let i = 0; i <= 100; i++) {
+    console.log(i)
+  }
+}
+
+printFirst100Number()
+
+//24. Create a function that will merge two arrays and return the result as a new array
+
+function mergeTwoArray (arrayOne, arrayTwo) {
+  let tmp = [];
+  tmp.push(arrayOne.concat(arrayTwo))
+  return tmp
+}
+
+mergeTwoArray([3, 7, 4, 1, 9], [8, 3, 6, 1, 0]);
