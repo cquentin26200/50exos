@@ -140,3 +140,13 @@ function printFirst100Number () {
 }
 
 printFirst100Number()
+
+//24. Create a function that will merge two arrays and return the result as a new array
+
+function mergeTwoArray (arrayOne, arrayTwo) {
+  let tmp = [];
+  tmp.push(arrayOne.concat(arrayTwo))
+  return tmp
+}
+
+mergeTwoArray([3, 7, 4, 1, 9], [8, 3, 6, 1, 0]);
