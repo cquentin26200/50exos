@@ -119,7 +119,15 @@ returnPositiveNumber([2, -4, 8, 3, -6]);
 //13. Find the maximum number in an array of numbers
 
 function findTheMaxNumber(array) {
-  return array.reduce((e, a) => Math.min(e, a));
+  return array.reduce((e, a) => Math.max(e, a));
 }
 
 findTheMaxNumber([4, 2, 9, 6, 1]);
+
+//14. Print the first 10 Fibonacci numbers without recursion
+
+function fibonacci (array) {
+  return array.reduce((e, a) => e + a);
+}
+
+fibonacci([1, 2, 3, 5, 8])
