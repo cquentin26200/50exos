@@ -92,7 +92,6 @@ convertFahrenheitToCelsius(34);
 //10. Calculate the sum of numbers in an array of numbers
 
 function calculateSumNumberInArray(array) {
-  let tmp = 0;
   for (let i = 0; i < array.length; i++) {
     tmp += array[i];
   }
@@ -123,3 +122,21 @@ function findTheMaxNumber(array) {
 }
 
 findTheMaxNumber([4, 2, 9, 6, 1]);
+
+//16. Create a function that will return a Boolean specifying if a number is prime
+
+function returnThePrimeNumber (array) {
+  return array.filter(e => Number.isInteger(e));
+}
+
+returnThePrimeNumber([3, 8, 4.7, 1, 3.9]);
+
+//18. Print the first 100 prime numbers
+
+function printFirst100Number () {
+  for (let i = 0; i <= 100; i++) {
+    console.log(i)
+  }
+}
+
+printFirst100Number()
