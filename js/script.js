@@ -92,9 +92,13 @@ convertFahrenheitToCelsius(34);
 //10. Calculate the sum of numbers in an array of numbers
 
 function calculateSumNumberInArray(array) {
+  /*let tmp = 0;
   for (let i = 0; i < array.length; i++) {
     tmp += array[i];
-  }
+  } 
+  return tmp;*/
+
+  return array.reduce((e, a) => e + a);
 }
 
 calculateSumNumberInArray([1, 7, 3, 8, 2, 5]);
@@ -107,6 +111,15 @@ function calcuateAverageOfNumber(array) {
 
 calcuateAverageOfNumber([1, 7, 3, 8, 4]);
 
+function calcuateAverageOfNumberV2(array) {
+  let tmp = 0;
+  for (let i = 0; i < array.length; i++) {
+    tmp += array[i] / i;
+  }
+  return tmp;
+}
+calcuateAverageOfNumberV2([10, 20, 10, 5, 15]);
+
 //.12 Create a function that receives an array of numbers as argument and returns an array containing only the positive numbers
 
 function returnPositiveNumber(array) {
@@ -114,6 +127,18 @@ function returnPositiveNumber(array) {
 }
 
 returnPositiveNumber([2, -4, 8, 3, -6]);
+
+function returnPositiveNumberV2(array) {
+  let tmp = [];
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] > 0) {
+      tmp.push(array[i]);
+    }
+  }
+  return tmp;
+}
+
+returnPositiveNumberV2([2, -4, 8, 3, -6]);
 
 //13. Find the maximum number in an array of numbers
 
@@ -123,30 +148,44 @@ function findTheMaxNumber(array) {
 
 findTheMaxNumber([4, 2, 9, 6, 1]);
 
+function findTheMaxNumberV2(array) {
+  let tmp = array[0];
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] > tmp) {
+      tmp = array[i]
+    } 
+  }
+  return tmp;
+}
+findTheMaxNumberV2([1, 14, 78, 5, 0]);
+
+
 //16. Create a function that will return a Boolean specifying if a number is prime
 
-function returnThePrimeNumber (array) {
-  return array.filter(e => Number.isInteger(e));
+function returnThePrimeNumber(array) {
+  return array.filter((e) => Number.isInteger(e));
 }
 
 returnThePrimeNumber([3, 8, 4.7, 1, 3.9]);
 
 //18. Print the first 100 prime numbers
 
-function printFirst100Number () {
+function printFirst100Number() {
   for (let i = 0; i <= 100; i++) {
-    console.log(i)
+    console.log(i);
   }
 }
 
-printFirst100Number()
+printFirst100Number();
 
 //24. Create a function that will merge two arrays and return the result as a new array
 
-function mergeTwoArray (arrayOne, arrayTwo) {
+function mergeTwoArray(arrayOne, arrayTwo) {
   let tmp = [];
-  tmp.push(arrayOne.concat(arrayTwo))
-  return tmp
+  tmp.push(arrayOne.concat(arrayTwo));
+  return tmp;
 }
 
 mergeTwoArray([3, 7, 4, 1, 9], [8, 3, 6, 1, 0]);
+
+
