@@ -184,6 +184,16 @@ function reverseArray (array) {
   return array.reverse()
 }
 
+reverseArray([3, 8, 1, 6, 4])
+
+//23. Reverse a string
+
+function reverseString (str) {
+  return str.split("").reverse().join("");
+}
+
+reverseString("Hello world")
+
 //24. Create a function that will merge two arrays and return the result as a new array
 
 function mergeTwoArray(arrayOne, arrayTwo) {
