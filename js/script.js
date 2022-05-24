@@ -178,6 +178,12 @@ function printFirst100Number() {
 
 printFirst100Number();
 
+//.22 Reverse an array
+
+function reverseArray (array) {
+  return array.reverse()
+}
+
 //24. Create a function that will merge two arrays and return the result as a new array
 
 function mergeTwoArray(arrayOne, arrayTwo) {
